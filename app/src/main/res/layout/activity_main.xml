@@ -11,12 +11,17 @@
         android:layout_height="65dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text=" Bienvenido al Quizz"
+        android:layout_marginStart="5dp"
         android:background="@drawable/top_start"
+        android:text="Bienvenido al Quiz"
+        android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#ffffff"
-        android:layout_marginStart="5dp"
         android:textSize="43sp" />
+
+
+
+
 
 
     <Button
@@ -36,5 +41,8 @@
         android:text="Jugar"
         android:textColor="#ffffff"
         android:textSize="30sp" />
+
+
+
 
 </RelativeLayout>

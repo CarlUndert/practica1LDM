@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">My Application(EDMT Dev)</string>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_ir_a_pantalla_juego">ir_a_pantalla_juego</string>
+    <string name="title_activity_jugar">jugar</string>
 </resources>

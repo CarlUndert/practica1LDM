@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_juego">
+
+
+
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="¿Pregunta?"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:visibility="visible" />
+
+
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginStart="25dp"
+        android:background="#4F1149"
+        android:text="Reiniciar" />
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/restart"
+        android:layout_marginEnd="25dp"
+        android:text="Siguiente"
+        android:visibility="invisible" />
+
+
+    <RadioGroup
+        android:id="@+id/grupoRespuestas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="95dp"
+        android:padding="15dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/respuestaNumero1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_respuestas"
+            android:text="1ª respuesta"
+            android:paddingHorizontal="35dp"
+            android:layout_marginVertical="3dp"/>
+        <Button
+            android:id="@+id/respuestaNumero2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2ª respuesta"
+            android:background="@drawable/background_respuestas"
+            android:paddingHorizontal="35dp"
+            android:layout_marginVertical="3dp"
+
+            />
+        <Button
+            android:id="@+id/respuestaNumero3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3ª respuesta"
+            android:background="@drawable/background_respuestas"
+            android:paddingHorizontal="35dp"
+            android:layout_marginVertical="3dp"
+            />
+
+        <Button
+            android:id="@+id/respuestaNumero4"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_respuestas"
+            android:paddingHorizontal="35dp"
+            android:text="4ª respuesta"
+            />
+
+    </RadioGroup>
+
+
+
+
+    <RadioGroup
+        android:id="@+id/grupoRespuestasTipo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imgQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:visibility="visible"
+            app:srcCompat="@drawable/jack_sparrow" />
+
+        <RadioButton
+            android:id="@+id/respuesta_rdBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#00000000"
+            android:text="Respuesta 1" />
+
+        <RadioButton
+            android:id="@+id/respuesta_rdBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Respuesta 2" />
+
+        <RadioButton
+            android:id="@+id/respuesta_rdBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Respuesta 3" />
+
+        <RadioButton
+            android:id="@+id/respuesta_rdBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Respuesta 4"
+            android:visibility="visible" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:text="Pregunta"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:text="Score:"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>
